@@ -36,7 +36,7 @@ jobs:
           sudo -E apt-get clean
       - name: Install package
         run: |
-          git clone --depth 1 https://github.com/openwrt/packages.git package
+          git clone --depth 1 https://github.com/openwrt/packages.git package/packages
       - name: Install HelloWorld
         run: |
           git clone --depth 1 https://github.com/fw876/helloworld.git package/helloworld
