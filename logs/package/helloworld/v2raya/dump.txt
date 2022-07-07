@@ -1,0 +1,26 @@
+Build-Depends: golang/host
+
+Package: v2raya
+Submenu: Web Servers/Proxies
+Version: 1.5.8.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle +iptables-mod-conntrack-extra +iptables-mod-extra +iptables-mod-filter +iptables-mod-tproxy +kmod-ipt-nat6 +xray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Linux web GUI client of Project V
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2rayA-1.5.8.1.tar.gz
+License: AGPL-3.0-only
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   v2rayA is a V2Ray Linux client supporting global transparent proxy,
+  compatible with SS, SSR, Trojan(trojan-go), PingTunnel protocols.
+https://v2raya.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Makefile:28: /root/WorkSpace/package_build/openwrt-sdk-ipq806x-generic_gcc-11.3.0_musl_eabi.Linux-x86_64/feeds/packages/lang/golang/golang-package.mk: No such file or directory
+make[2]: *** No rule to make target '/root/WorkSpace/package_build/openwrt-sdk-ipq806x-generic_gcc-11.3.0_musl_eabi.Linux-x86_64/feeds/packages/lang/golang/golang-package.mk'.  Stop.

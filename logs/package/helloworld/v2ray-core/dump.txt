@@ -1,0 +1,48 @@
+Build-Depends: golang/host
+
+Package: v2ray-core
+Version: 5.0.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2ray-core-5.0.7.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Project V is a set of network tools that help you to build your own computer network.
+  It secures your network connections and thus protects your privacy.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: v2ray-extra
+Version: 5.0.7-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread v2ray-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A platform for building proxies to bypass network restrictions (extra resources)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: v2ray-core-5.0.7.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     Project V is a set of network tools that help you to build your own computer network.
+  It secures your network connections and thus protects your privacy.
+
+  This includes extra resources for v2ray-core.
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Makefile:30: /root/WorkSpace/package_build/openwrt-sdk-ipq806x-generic_gcc-11.3.0_musl_eabi.Linux-x86_64/feeds/packages/lang/golang/golang-package.mk: No such file or directory
+make[2]: *** No rule to make target '/root/WorkSpace/package_build/openwrt-sdk-ipq806x-generic_gcc-11.3.0_musl_eabi.Linux-x86_64/feeds/packages/lang/golang/golang-package.mk'.  Stop.

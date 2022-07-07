@@ -1,0 +1,26 @@
+Build-Depends: golang/host
+
+Package: hysteria
+Version: 1.0.5-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-bundle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A feature-packed network utility optimized for networks of poor quality
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: hysteria-1.0.5.tar.gz
+License: MIT
+Type: ipkg
+Description:   Hysteria is a feature-packed network utility optimized for networks
+  of poor quality (e.g. satellite connections, congested public Wi-Fi,
+  connecting from China to servers abroad) powered by a custom version
+  of QUIC protocol.
+https://github.com/tobyxdd/hysteria
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Makefile:28: /root/WorkSpace/package_build/openwrt-sdk-ipq806x-generic_gcc-11.3.0_musl_eabi.Linux-x86_64/feeds/packages/lang/golang/golang-package.mk: No such file or directory
+make[2]: *** No rule to make target '/root/WorkSpace/package_build/openwrt-sdk-ipq806x-generic_gcc-11.3.0_musl_eabi.Linux-x86_64/feeds/packages/lang/golang/golang-package.mk'.  Stop.
